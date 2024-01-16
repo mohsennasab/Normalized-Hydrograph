@@ -166,7 +166,7 @@ def GetFlow(site_no, begin_date, end_date, output_folder, user_months):
     site_info_df = pd.DataFrame(site_info.table)
 
     # Save the discharge data and site information to CSV files
-    raw_data.to_csv(USGS_data + "USGS_Discharge_" + site_no + ".csv")
+    raw_data.to_csv(os.path.join(USGS_data, "USGS_Discharge_" + site_no + ".csv"))
     site_info_df.to_csv(USGS_data + "site_" + site_no + "_info.csv")
 
     # Plot the discharge hydrograph
