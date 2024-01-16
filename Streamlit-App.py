@@ -149,7 +149,7 @@ def GetFlow(site_no, begin_date, end_date, output_folder, user_months):
     discharge = hf.NWIS(site_no, 'iv', begin_date, end_date)
 
     # Prepare the folder path for saving data
-    USGS_data = output_folder + '\USGS' + site_no + '\'
+    USGS_data = os.path.join(output_folder, 'USGS' + site_no)
     
     # Create the folder if it does not exist
     CreateFolder(USGS_data)
