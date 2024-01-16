@@ -533,7 +533,8 @@ def main():
     st.title("Download Streamflow from USGS")
     st.write("""
              
-             Developed by Mohsen Tahmasebi, PhD
+             Developed by Mohsen Tahmasebi Nasab, PhD
+             https://www.hydromohsen.com
              
              """)
     st.write("""Please note that this application helps you create normalized hydrographs. A normalized hydrograph is not 
